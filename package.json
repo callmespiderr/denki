@@ -1,0 +1,24 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/callmespiderr/denki#readme",
+  "bugs": {
+    "url": "https://github.com/callmespiderr/denki/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callmespiderr/denki.git"
+  },
+  "license": "ISC",
+  "author": "alex",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "sass:watch": "sass --watch styles:dist"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3",
+    "sass": "^1.95.0"
+  }
+}
