@@ -9,17 +9,27 @@
         @include m.d-flex(start, center);
         height: 55px;
 
-        .nav__links {
-            @include m.d-flex(start, center);
+        .links {
             flex-grow: 1;
 
-            &-item {
-                margin: 0 8vw 0 0;
-                font-size: 22px;
-                color: v.$text-color;
+            &__list {
+                @include m.d-flex(start, center);
 
-                &:hover {
-                    color: #a9a9a9;
+                .list-item {
+                    font-size: 22px;
+                    margin: 0 8vw 0 0;
+                    
+                    &:hover {
+                        color: #a9a9a9;
+                    }
+
+                    .links-item {
+                        white-space: nowrap;
+                    }
+                }
+
+                @media (max-width: 1400px) {
+                    margin-left: 5vw;
                 }
             }
         }
@@ -34,6 +44,11 @@
             width: 140px;
             height: 40px;
             font-size: 20px;
+
+            @media (max-width: 1400px) {
+                    margin-right: 5vw;
+                }
+
             &:hover {
                 background-color: #a9a9a9;
                 cursor: pointer;
