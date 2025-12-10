@@ -13,9 +13,11 @@
   "license": "ISC",
   "author": "alex",
   "type": "commonjs",
-  "main": "index.html",
+  "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --watch styles:dist"
+    "sass:watch": "sass --watch styles:dist",
+    "start": "parcel index.html",
+    "parcel:build": "parcel build --dist-dir build --public-url ./"
   },
   "devDependencies": {
     "parcel": "^2.16.3",
